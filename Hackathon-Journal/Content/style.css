@@ -1,0 +1,54 @@
+﻿#btn-login{
+    border:1px solid black;
+}
+#btn-create-account {
+    border: 1px solid black;
+}
+#btn-sign-up {
+    border: 1px solid black;
+}
+#btn-entry {
+    border: 1px solid black;
+}
+.btn-search {
+    border: 1px solid black;
+}
+.search-bar {
+    text-align:right;
+    padding:4px;
+}
+.entry-button {
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+#welcome-header {
+    text-align: center;
+}
+#login{
+    text-align: center;
+    padding: 4px;
+}
+#create-account {
+    text-align: center;
+    padding: 4px;
+}
+.entry-add {
+    text-align:right;
+}
+#content {
+    background-color: #fefae0;
+    width: 960px;
+    height: 960px;
+    border: 5px solid #bc6c25;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+#maincontent {
+    background-color: #faedcd;
+}
+
+#sidebar {
+    background-color: white;
+}

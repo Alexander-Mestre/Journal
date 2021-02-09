@@ -6,9 +6,9 @@
 
 
 
-function phpmotorsConnect(){
+function journalConnect(){
     $server = 'localhost';
-    $dbname = 'phpmotors';
+    $dbname = 'journal';
     $username = 'iClient';
     $password = 'password';
     $dsn = "mysql:host=$server;dbname=$dbname";

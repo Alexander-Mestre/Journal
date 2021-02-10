@@ -17,7 +17,8 @@
 </head>
 <body>
     <!--Open Header for future use-->
-    <header>
+    <header style="background-color: blue;">
+        <h2 style="color: white; margin-left:10px;">Journal</h2>
     </header>
     <main id="maincontent">
     <div class="container-fluid">

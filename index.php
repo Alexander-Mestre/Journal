@@ -6,6 +6,8 @@ require_once 'library/connections.php';
 //Get the database connection file
 require_once 'model/home-model.php';
 
+require_once 'model/create-entry.php';
+
 
 $entries = populate(1);
 
@@ -28,8 +30,48 @@ foreach($entries as $entry){
 
 }
 
+$action = filter_input(INPUT_POST, 'action');
+    if ($action == NULL){
+        $action = filter_input(INPUT_GET, 'action');
+    }
+
 switch ($action){
-  
+        
+
+    case 'create':
+               //1. Filter and Store incoming data
+               $entryTitle = filter_input(INPUT_POST, 'entryTitle');
+               $entryCategoryOne = filter_input(INPUT_POST, 'entryCategoryOne');
+               $entryCategoryTwo = filter_input(INPUT_POST, 'entryCategoryTwo');
+               $entryText = filter_input(INPUT_POST, 'entryText');
+               $entryDate = filter_input(INPUT_POST, 'entryDate');
+               $entryPicture = filter_input(INPUT_POST, 'entryPicture');
+               //2. Check Data
+               // Check for missing data
+               /*
+               if (empty($entryTitle) || empty($entryCategoryOne) || empty($entryCategoryTwo) || empty($entryText) || empty($entryDate)) {
+                   $message = '<p>Please provide information for all empty form fields.</p>';
+                   include 'view/create-entry.php';
+                   exit;
+               }
+               */
+       
+               //4. Process the data
+               // Send the data to the model
+               $entryOutcome = createEntry($entryTitle,$entryCategoryOne,$entryCategoryTwo,$entryText, $entryDate);
+       
+               //5. Check and report the result
+               if ($entryOutcome === 1) {
+                   $message = "<p>Entry Created</p>";
+                   include '/view/home-page.php';
+                   exit;
+               } else {
+                   $message = "<p>Sorry, entry creation failed</p>";
+                   include '/view/home-page.php';
+                   exit;
+               }
+        break;
+
         default:
             include 'view/home-page.php';
 }

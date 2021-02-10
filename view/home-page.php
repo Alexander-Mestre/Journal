@@ -1,11 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
 
-    <!-- Boostrap CSS -->  
+    <!-- Boostrap CSS -->
     <link href="Hackathon-Journal/Content/style.css" rel="stylesheet" type="text/css" />
     <link href="../Hackathon-Journal/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- CSS only -->
@@ -17,7 +18,11 @@
     <title>Home Page</title>
 
 </head>
+
 <body>
+    <header style="background-color: blue;">
+        <h2 style="color: white; margin-left:10px;">Journal</h2>
+    </header>
     <!-- A header inserted here with the search-input bar in the top right and maybe a banner-->
     <header>
         <div class="container">
@@ -65,8 +70,9 @@
                 </div>
                 <!-- Body of the page. Waiting for database to fill -->
                 <div class="col-sm-10" id="parent-container">
-                    <?php 
-                    echo($entryBox);
+                  
+                    <?php
+                    echo ($entryBox);
                     ?>
                 </div>
             </div>
@@ -80,7 +86,7 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-10">
                     <div class="entry-add">
-                        <p><a href="view/create-entry.html"><img src="images/plus-button.png" alt="create-entry.html" width="64"/></a></p>
+                        <p><a href="view/create-entry.php"><img src="images/plus-button.png" alt="create-entry.html" width="64" /></a></p>
                     </div>
                 </div>
             </div>

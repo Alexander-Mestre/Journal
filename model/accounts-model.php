@@ -3,6 +3,7 @@
 /*
 *accounts model
 */
+require_once '../library/connections.php';
 
 
 //Register a new client

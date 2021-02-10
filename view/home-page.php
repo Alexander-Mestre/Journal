@@ -6,8 +6,10 @@
     <meta charset="utf-8" />
 
     <!-- Boostrap CSS -->  
-    <link href="Content/style.css" rel="stylesheet" type="text/css" />
-    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="Hackathon-Journal/Content/style.css" rel="stylesheet" type="text/css" />
+    <link href="../Hackathon-Journal/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!-- Bootstrap JS and Jquery -->
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
@@ -62,11 +64,10 @@
                     </table>
                 </div>
                 <!-- Body of the page. Waiting for database to fill -->
-                <div class="col-sm-10">
-                    <div class="journal-box">
-                        <h2>This is The Heading</h2>
-                        <p>This is were the journal entry stuff will go.</p>
-                    </div>
+                <div class="col-sm-10" id="parent-container">
+                    <?php 
+                    echo($entryBox);
+                    ?>
                 </div>
             </div>
         </div>
@@ -79,7 +80,7 @@
                 <div class="col-sm-2"></div>
                 <div class="col-sm-10">
                     <div class="entry-add">
-                        <p><a href="create-entry.html"><img src="plus-button.png" alt="create-entry.html" width="64"/></a></p>
+                        <p><a href="view/create-entry.html"><img src="images/plus-button.png" alt="create-entry.html" width="64"/></a></p>
                     </div>
                 </div>
             </div>

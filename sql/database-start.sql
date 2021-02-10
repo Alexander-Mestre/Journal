@@ -14,10 +14,10 @@ CREATE TABLE entries (
   userId int UNSIGNED NOT NULL,
   entryTitle varchar(50) NOT NULL,
   entryText varchar(10000),
-  enrtyPicture varchar(50),
+  entryPicture varchar(50),
   entryDate date NOT NULL,
-  enrtyCategoryOne varchar(30),
-  enrtyCategoryTwo varchar(30)
+  entryCategoryOne varchar(30),
+  entryCategoryTwo varchar(30)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
@@ -39,10 +39,10 @@ INSERT INTO entries(
    userId
   ,entryTitle
   ,entryText 
-  ,enrtyPicture
+  ,entryPicture
   ,entryDate
-  ,enrtyCategoryOne 
-  ,enrtyCategoryTwo 
+  ,entryCategoryOne 
+  ,entryCategoryTwo 
 )
 VALUES(
   1
@@ -59,10 +59,10 @@ INSERT INTO entries(
    userId
   ,entryTitle
   ,entryText 
-  ,enrtyPicture
+  ,entryPicture
   ,entryDate
-  ,enrtyCategoryOne 
-  ,enrtyCategoryTwo 
+  ,entryCategoryOne 
+  ,entryCategoryTwo 
 )
 VALUES(
    1
@@ -79,10 +79,10 @@ INSERT INTO entries(
    userId
   ,entryTitle
   ,entryText 
-  ,enrtyPicture
+  ,entryPicture
   ,entryDate
-  ,enrtyCategoryOne 
-  ,enrtyCategoryTwo 
+  ,entryCategoryOne 
+  ,entryCategoryTwo 
 )
 VALUES(
   1
@@ -99,10 +99,10 @@ INSERT INTO entries(
    userId
   ,entryTitle
   ,entryText 
-  ,enrtyPicture
+  ,entryPicture
   ,entryDate
-  ,enrtyCategoryOne 
-  ,enrtyCategoryTwo 
+  ,entryCategoryOne 
+  ,entryCategoryTwo 
 )
 VALUES(
   1
@@ -119,10 +119,10 @@ INSERT INTO entries(
    userId
   ,entryTitle
   ,entryText 
-  ,enrtyPicture
+  ,entryPicture
   ,entryDate
-  ,enrtyCategoryOne 
-  ,enrtyCategoryTwo 
+  ,entryCategoryOne 
+  ,entryCategoryTwo 
 )
 VALUES(
   1
@@ -139,10 +139,10 @@ INSERT INTO entries(
    userId
   ,entryTitle
   ,entryText 
-  ,enrtyPicture
+  ,entryPicture
   ,entryDate
-  ,enrtyCategoryOne 
-  ,enrtyCategoryTwo 
+  ,entryCategoryOne 
+  ,entryCategoryTwo 
 )
 VALUES(
   1
@@ -159,10 +159,10 @@ INSERT INTO entries(
    userId
   ,entryTitle
   ,entryText 
-  ,enrtyPicture
+  ,entryPicture
   ,entryDate
-  ,enrtyCategoryOne 
-  ,enrtyCategoryTwo 
+  ,entryCategoryOne 
+  ,entryCategoryTwo 
 )
 VALUES(
   1
@@ -179,10 +179,10 @@ INSERT INTO entries(
    userId
   ,entryTitle
   ,entryText 
-  ,enrtyPicture
+  ,entryPicture
   ,entryDate
-  ,enrtyCategoryOne 
-  ,enrtyCategoryTwo 
+  ,entryCategoryOne 
+  ,entryCategoryTwo 
 )
 VALUES(
   1
@@ -199,10 +199,10 @@ INSERT INTO entries(
    userId
   ,entryTitle
   ,entryText 
-  ,enrtyPicture
+  ,entryPicture
   ,entryDate
-  ,enrtyCategoryOne 
-  ,enrtyCategoryTwo 
+  ,entryCategoryOne 
+  ,entryCategoryTwo 
 )
 VALUES(
   1
@@ -219,10 +219,10 @@ INSERT INTO entries(
   userId
   ,entryTitle
   ,entryText 
-  ,enrtyPicture
+  ,entryPicture
   ,entryDate
-  ,enrtyCategoryOne 
-  ,enrtyCategoryTwo 
+  ,entryCategoryOne 
+  ,entryCategoryTwo 
 )
 VALUES(
   1

@@ -52,3 +52,12 @@
 #sidebar {
     background-color: white;
 }
+
+.journal-box {
+    padding: 8px;
+    margin: 25px;
+    font-size: .5em;
+    border: 2px solid black;
+    border-radius: 3px;
+    max-width: 200px;
+}
